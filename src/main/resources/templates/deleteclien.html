@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Nuevo clientes</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>	
+	<body>
+		<div class="container mt-4">
+			<div class="col-sm-6">
+				<form th:action="@{/eliminated}" th:object=${cliente} method="DELETE">
+					<div class="card">
+						<div class"card-header"><h3>Está a punto de eliminar el cliente</h3></div>
+						
+						</div>
+						<div class="card-footer">
+						<H4>¿esta seguro?</H4>
+							<input type="submit" value="Eliminar" class="btn btn-danger">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
